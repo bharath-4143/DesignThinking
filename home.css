@@ -1,0 +1,61 @@
+.logo{
+    text-align: center;
+    background: black;
+  }
+.nav1{
+    color: black;
+    font-size: 22px;
+    overflow: auto;
+    white-space: nowrap;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background: rgb(255, 123, 0);
+  }
+  .nav{
+    margin: 10px;
+    font-weight: bold;
+  }
+  .menu{
+    display: flex;
+    overflow: auto;
+    white-space: nowrap;
+    text-align: center;
+    background: gray;
+    margin: 15px;
+    padding: 10px;
+    border-radius: 20px;
+  }
+  .item{
+    width: 100px;
+    height: 100px;
+  }
+  .itembox{
+    margin: 15px;
+    padding: 15px;
+    border-radius: 15px;
+    background: #4e4e4e;
+    max-width: fit-content;
+  }
+  .head{
+    width: fit-content;
+    background: rgb(255, 123, 0);
+    border-radius: 12px;
+    padding: 10px;
+  }
+  
+  footer{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    align-items: center;
+    background: #616161;
+    padding: 5%;
+  }
+  h6{
+    text-align: center;
+  }
+  .c{
+    font-size: 20px;
+    width: 45px;
+    padding-left: 1.5%;
+    padding-right: 1.5%;
+  }
