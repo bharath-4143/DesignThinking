@@ -1,17 +1,16 @@
 .logo{
+    height: 60px;
     text-align: center;
-    background: black;
   }
 .nav1{
-    color: black;
     font-size: 22px;
     overflow: auto;
     white-space: nowrap;
     text-align: center;
     padding-top: 10px;
     padding-bottom: 10px;
-    background: rgb(255, 123, 0);
-  }
+    background-image: radial-gradient(white,orange); 
+   }
   .nav{
     margin: 10px;
     font-weight: bold;
@@ -21,12 +20,22 @@
     overflow: auto;
     white-space: nowrap;
     text-align: center;
-    background: gray;
+    background: rgb(182, 182, 182);
     margin: 15px;
     padding: 10px;
     border-radius: 20px;
   }
-  .item{
+  .button{
+    min-width: 18px;
+    outline: none;
+    border: none;
+    border-radius: 4px;
+    background-image: radial-gradient(rgb(252, 214, 145),orange);
+  }
+.buttonimg{
+  width: 12px;
+} 
+.item{
     width: 100px;
     height: 100px;
   }
@@ -34,7 +43,8 @@
     margin: 15px;
     padding: 15px;
     border-radius: 15px;
-    background: #4e4e4e;
+    background: orange;
+    background-image:linear-gradient(orange, rgb(255, 255, 255));
     max-width: fit-content;
   }
   .head{
@@ -43,14 +53,20 @@
     border-radius: 12px;
     padding: 10px;
   }
-  
+  .js{
+    background: white;
+    padding: 5px;
+  }
+  .redline{
+    margin: 1.5px;
+  }
   footer{
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     align-items: center;
-    background: #616161;
-    padding: 5%;
+    background-image:linear-gradient(rgb(255, 255, 255),rgb(83, 83, 83));
+    padding: 3%;
   }
-  h6{
+  h1,h6{
     text-align: center;
   }
   .c{
