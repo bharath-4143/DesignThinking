@@ -8,7 +8,7 @@
   height: auto;
   overflow: auto;
   text-align: center;
-  background-image: linear-gradient(white,rgb(255, 184, 52));
+  background-image: linear-gradient(white,orange);
    }
 .homeicon,.bowlicon{
     padding: 10px;
@@ -31,7 +31,7 @@
     overflow: auto;
     white-space: nowrap;
     text-align: center;
-    background: #f1efb9;
+    background: #f3f3f3;
     margin: 15px;
     padding: 10px;
     border-radius: 20px;
@@ -55,7 +55,7 @@
     padding: 15px;
     border-radius: 15px;
     background: orange;
-    background-image:linear-gradient(orange,rgb(255, 255, 130));
+    background-image:linear-gradient(orange,white);
     max-width: fit-content;
   }
   .head{
