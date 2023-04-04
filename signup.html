@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login to SpeedyEats</title>
+</head>
+<style>
+    html{
+        background: fixed;
+        background-image: radial-gradient(white,orange);
+    }
+    img{
+        max-width: 300px;
+        width: fit-content;
+        display: block;
+        margin: auto;
+    }
+    form{ 
+        margin: auto;
+        margin-bottom: 30px;
+        padding: 20px;
+        width: 90%;
+        max-width: 360px;
+        background-image: radial-gradient(white,rgb(255, 213, 135));
+        border: 5px solid orange;
+        border-radius: 30px;
+    }
+    .form{
+        margin: auto;
+        margin-bottom: 12px;
+        padding: 2px;
+        width: 75%;
+        outline: none;
+        background: transparent;
+        border: 0.01px solid black;
+        border-radius: 5px;
+        display: block;
+        }
+</style>
+<body>
+    <div>
+        <form id="form" action="#" method="post">
+            <h1>Hey,<br>Welcome to</h1><br>
+            <img src="se.png" alt="SpeedyEats"><br>
+            <input class="form" name="name" id="name" type="text" placeholder="Enter Name" >
+            <input class="form" name="email" id="email" type="email" placeholder="Enter E-mail Id or Phone Number" >
+            <input class="form" name="otp" id="otp" type="numb"placeholder=" Enter OTP XXXX">
+            <button class="form" name="submitbutton" id="submitbutton">Submit</button>
+            <button class="form" name="Resendbutton" id="resendbutton">Resend</button>
+        </form>
+    </div>    
+</body>
+</html>
