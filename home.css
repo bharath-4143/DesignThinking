@@ -2,7 +2,7 @@ html{
   background:orange;
 }
 .nav{
-  visibility: hidden;
+
   position: fixed;
   width: 280px;
   height: 100%;
