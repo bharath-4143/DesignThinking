@@ -1,3 +1,6 @@
+html{
+  background:orange;
+}
 .nav{
   visibility: hidden;
   position: fixed;
@@ -35,7 +38,6 @@ a{
   height: auto;
   overflow: auto;
   text-align: center;
-  background-image: linear-gradient(white,orange);
    }
 .homeicon,.bowlicon{
     padding: 10px;
@@ -54,10 +56,6 @@ a{
     width: 30px;
   } 
   h3{
-    width: 120px;
-    display: flex;
-    overflow: hidden;
-    white-space: nowrap;
     text-align: center;
   }
   .menu{
@@ -65,7 +63,8 @@ a{
     overflow: auto;
     white-space: nowrap;
     text-align: center;
-    background: #f3f3f3;
+    background:rgb(255, 233, 193);
+    box-shadow: 15px 15px 15px rgb(26, 26, 26);
     margin: 15px;
     padding: 10px;
     border-radius: 20px;
@@ -89,7 +88,8 @@ a{
     padding: 15px;
     border-radius: 15px;
     background: orange;
-    background-image:linear-gradient(orange,white);
+    background-image:linear-gradient(orange,rgb(255, 213, 134));
+    min-width: 150px;
     max-width: fit-content;
   }
   .head{
@@ -100,15 +100,15 @@ a{
   }
   .js{
     background: white;
-    padding: 5px;
+    padding: 20px;
   }
   .redline{
-    margin: 1.5px;
+    margin: 3px;
   }
   footer{
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     align-items: center;
-    background-image:linear-gradient(rgb(255, 255, 255),rgb(83, 83, 83));
+    background-image:linear-gradient(rgb(255, 255, 255),rgb(204, 204, 204));
     padding: 3%;
   }
   h1,h6{
