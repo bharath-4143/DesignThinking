@@ -26,7 +26,7 @@ font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, O
   visibility: hidden;
   position: fixed;
   top: 10vh;
-  left: 20%;
+  left: 2%;
 }
 form{ 
   margin: auto;
