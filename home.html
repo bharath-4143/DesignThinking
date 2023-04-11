@@ -6,35 +6,122 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SpeedyEats</title>
     <link rel="stylesheet" href="home.css">
-    <link rel="stylesheet" href="home.css">
-</head><script>
-    function openNav() {
+    <link rel="stylesheet" href="home.js">
+</head>
+<script>
+    function opennav() {
       document.getElementById("nav").style.visibility = "visible";
     }
     
-    function closeNav() {
+    function closenav() {
       document.getElementById("nav").style.visibility="hidden";
     }
     </script>
 <div id="nav" class="nav">
-    <button href="javascript:void(0)" class="closebtn" onclick="closeNav()">X</button>
-
+    <button href="javascript:void(0)" class="closebtn" onclick="closenav()">X</button>
     <a href="">Name</a>
     <a href="">PhoneNumber</a>
-    <a href="signup.html" class="navbutton">SignUp</a>
-    <a href="login.html" class="navbutton">Login</a>
-    <a href="home.html">Home</a>
-    <a href="bowl.html">Bowl</a>
-    <a href="wallet.html">Wallet</a>
-    <a href="funds.html">Add Funds</a>
-    <a>History</a>
-    <a>Support</a>
+    <a onclick="opensignup(),closenav()" class="navbutton">SignUp</a>
+    <a onclick="openlogin(),closenav()" class="navbutton">Login</a>
+    <a onclick="closenav()">Home</a>
+    <a onclick="openbowl(),closenav()">Bowl</a>
+    <a onclick="openwallet(),closenav()">Wallet</a>
+    <a onclick="openfunds(),closenav()">Add Funds</a>
+    <a onclick="openhistory(),closenav()">History</a>
+    <a onclick="closenav()" href="#contact">Support</a>
     <a>About ツ</a>
+</div>
+<div class="signupform" id="signupform">
+    <script>
+    function opensignup() {
+      document.getElementById("signupform").style.visibility = "visible";
+    }
+    function closesignup() {
+      document.getElementById("signupform").style.visibility="hidden";
+    }
+    </script>
+    <form>
+        <button href="javascript:void(0)" class="closebtn" onclick="closesignup()">X</button>
+        <h1>Signup</h1>
+        <img class="logo" src="se.png" alt="SpeedyEats"><br>
+        <h3>Welcome to SpeedyEats</h3>
+        <input class="form" name="name" id="name" type="text" placeholder="Enter Name" required>
+        <input class="form" name="email" id="email" type="email" placeholder="Enter E-mail Id or Phone Number" required>
+        <input class="form" name="otp" id="otp" type="numb"placeholder=" Enter OTP XXXX">
+        <button class="form" name="submitbutton" id="submitbutton">Submit</button>
+        <button class="form" name="Resendbutton" id="resendbutton">Resend</button><br><br>
+        <a href="signup.html"><p>Signup be Speedy</p></a>
+    </form>
+</div>
+<div class="loginform" id="loginform">
+    <script>
+    function openlogin() {
+      document.getElementById("loginform").style.visibility = "visible";
+    }
+    function closelogin() {
+      document.getElementById("loginform").style.visibility="hidden";
+    }
+    </script>
+    <form>
+        <button href="javascript:void(0)" class="closebtn" onclick="closelogin()">X</button>
+        <h1>Login to</h1>
+        <img class="logo" src="se.png" alt="SpeedyEats"><br>
+        <h3>Welcome back Speedy,</h3>
+        <input class="form" name="email" id="email" type="email" placeholder="Enter E-mail Id or Phone Number" required>
+        <button class="form" name="Resendbutton" id="resendbutton">Send OTP</button>
+        <input class="form" name="otp" id="otp" type="numb"placeholder=" Enter OTP XXXX">
+        <button class="form" name="submitbutton" id="submitbutton">Submit</button>
+        <button class="form" name="Resendbutton" id="resendbutton">Resend</button><br><br>
+        <a href="signup.html"><p>Signup be Speedy</p></a>
+    </form>
+</div>
+<div class="bowl" id="bowl">
+    <script>
+    function openbowl() {
+      document.getElementById("bowl").style.visibility = "visible";
+    }
+    function closebowl() {
+      document.getElementById("bowl").style.visibility="hidden";
+    }
+    </script>
+    <button href="javascript:void(0)" class="closebtn" onclick="closebowl()">X</button>
+    <div class="billbox">
+            <img src="hotel.png" alt="">
+            <p class="hotelinfo">Address</p>
+            <table class="billbox">
+                <tr>
+                    <th>Items</th>
+                    <th>Price</th>
+                    <th>Count</th>
+                    <th>Total</th>
+                </tr>
+                <tr>
+                    <td>Mutton Briyani</td>
+                    <td>120/-</td>
+                    <td>2</td>
+                    <td>240/-</td>
+                </tr>                    
+                <tr>
+                    <td>Chiken Briyani</td>
+                    <td>100/-</td>
+                    <td>2</td>
+                    <td>200/-</td>
+                </tr><br>
+                <tr>
+                    <td>Total Amount</td>
+                    <td></td>
+                    <td>4</td>
+                    <td>440/-</td>
+                </tr>
+            </table>
+            <p>🙏<br>Thankyou Visit Again</p>
+        </div>
+        <button class="paybutton">Pay</button>    
 </div>
     <div class="brand">
         <img class="logo" src="se.png" alt="SpeedyEats">
-        <button class="homeicon"><img class="buttonimg" src="≡.png" alt="#"onclick="openNav()"></button>
-        <button class="bowlicon"><img class="buttonimg" src="bowl.png" alt="#"onclick="document.location='bowl.html'"></button>
+        <button class="homeicon"><img class="buttonimg" src="≡.png" alt="#"onclick="opennav()"></button>
+        <button class="bowlicon"><img class="buttonimg" src="bowl.png" alt="#"onclick="openbowl()"></button>
         <button class="walleticon"><img class="buttonimg" src="wallet.png" alt="#"onclick="document.location='wallet.html'"></button>
     </div>
     <hr color="black" size="0.1px">
@@ -66,7 +153,7 @@
             <button class="button" id="count">ADD</button>
             <button class="button" id="count++">+</div>    
     </div>
-        <h2 class="head">box</h2>
+        <h2 class="head">Menu</h2>
     <div class="box">
         <div class="inbox"><img class="item" src="rd.png" alt="#">
         <h3 class="iname">Veg Meal</h3>
@@ -158,7 +245,7 @@
     <table>
         <th>About</th>
     </table>
-    <table>
+    <table id="contact">
         <th>Contacts</th>
         <tr>
             <td><a href="mailto:"><img class="c" src="ml.png" alt="">E-Mail</a></td>

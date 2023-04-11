@@ -17,6 +17,37 @@ html{
   display: flex;
   flex-direction: column;
 }
+h1,h3,a{
+font-weight: normal;
+text-align: center;
+font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.loginform,.signupform,.bowl{
+  visibility: hidden;
+  position: fixed;
+  top: 10vh;
+  left: 20%;
+}
+form{ 
+  margin: auto;
+  padding: 20px;
+  width: 90%;
+  max-width: 320px;
+  background-image: radial-gradient(white,rgb(255, 213, 135));
+  border: 5px solid orange;
+  border-radius: 30px;
+}
+.form{
+  margin: auto;
+  margin-bottom: 12px;
+  padding: 2px;
+  width: 75%;
+  outline: none;
+  background: transparent;
+  border: 0.01px solid black;
+  border-radius: 5px;
+  display: block;
+} 
 a{
   padding: 5px;
   margin: auto;
@@ -25,13 +56,63 @@ a{
   margin-bottom: 5px;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
+.billtable,th,td,p{
+  padding: 4px;
+  text-align: center;
+  font-size: auto;
+}
+.head,.paybutton{
+  text-align: center;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-weight: 500;
+  background: orange;
+  background-size: contain;
+  padding: 10px;
+  margin: auto;
+  border-radius: 8px;
+}
+.paybutton{
+  font-size: large;
+  width: 120px;
+  background: rgb(109, 255, 80);
+}
+.bowl{
+display: flex;
+overflow: auto;
+flex-direction: column;
+white-space: nowrap;
+background: #f3f3f3;
+margin: 15px;
+padding: 10px;
+border-radius: 20px;
+}
+
+.bill{
+float: left;
+padding: 10px;
+width: 45px;
+height: 45px;
+}
+.billbox{
+display: block;
+margin: auto;
+margin-top: 15px;
+margin-bottom: 15px;
+border-radius: 15px;
+padding: 15px;
+max-width: 340px;
+background-image:radial-gradient(rgb(253, 209, 128),orange);
+}
+.billtable{
+margin-top: 5px;
+}
 .closebtn{
   font-size: 18px;
   background: transparent;
   border: none;
   position: absolute;
-  top: 10px;
-  right: 10px;
+  top: 30px;
+  right: 30px;
 }
 .navbutton{
   font-size: 12px;
@@ -123,6 +204,7 @@ a{
     align-items: center;
     background-image:linear-gradient(rgb(255, 255, 255),rgb(136, 136, 136));
     padding: 15px;
+    padding-top: 30px;
   }
   h1,h6{
     text-align: center;
