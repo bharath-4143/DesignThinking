@@ -25,9 +25,8 @@ font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, O
 .loginform,.signupform,.bowl{
   visibility: hidden;
   position: fixed;
-  z-index: 1;
-  height: max-content;
-  overflow: auto;
+  top: 10vh;
+  left: 2%;
 }
 form{ 
   margin: auto;
