@@ -75,6 +75,37 @@
         <a onclick="opensignup(),closelogin()"><p>Signup & Be Speedy</p></a>
     </form>
 </div>
+<div class="wallet" id="wallet">
+    <script>
+    function openwallet() {
+      document.getElementById("wallet").style.visibility = "visible";
+    }
+    function closewallet() {
+      document.getElementById("wallet").style.visibility="hidden";
+    }
+    </script>
+    <form>
+        <h1>Wallet</h1>
+        <button href="javascript:void(0)" class="closebtn" onclick="closewallet()">X</button>
+        <h3>Amount in your wallet<h1>200</h1></h3>
+        <button class="funds" id="funds" onclick="closewallet(),openfunds()">Add funds</button>
+    </form>
+</div>
+<div class="Funds" id="Funds">
+    <script>
+    function openfunds() {
+      document.getElementById("Funds").style.visibility = "visible";
+    }
+    function closefunds() {
+      document.getElementById("Funds").style.visibility="hidden";
+    }
+    </script>
+    <form>
+        <h1>Add Funds</h1>
+        <button href="javascript:void(0)" class="closebtn" onclick="closefunds()">X</button>
+        <h3>Add in your wallet<h1>200</h1></h3>
+    </form>
+</div>
 <div class="bowl" id="bowl">
     <script>
     function openbowl() {
@@ -122,7 +153,7 @@
         <img class="logo" src="se.png" alt="SpeedyEats">
         <button class="homeicon"><img class="buttonimg" src="≡.png" alt="#"onclick="opennav()"></button>
         <button class="bowlicon"><img class="buttonimg" src="bowl.png" alt="#"onclick="openbowl()"></button>
-        <button class="walleticon"><img class="buttonimg" src="wallet.png" alt="#"onclick="document.location='wallet.html'"></button>
+        <button class="walleticon"><img class="buttonimg" src="wallet.png" alt="#"onclick="openwallet()"></button>
     </div>
     <hr color="black" size="0.1px">
 <div>
@@ -274,7 +305,6 @@
     </table>
 </div>
 <h6><h class="c" id="contact">Special thanks to<br><img class="ppp" src="ppp.png"><a href="https://in.linkedin.com/in/drppalpandian"><h3>Prof Dr P Pal Pandian</h3></a></h></h6><br><br>
-<h1>ツ<br>BAVA.Inc</h1><br>
 </footer>
 </div>
 </html>
