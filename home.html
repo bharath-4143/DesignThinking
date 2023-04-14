@@ -18,7 +18,7 @@
     }
     </script>
 <div id="nav" class="nav">
-    <button href="javascript:void(0)" class="closebtn" onclick="closenav()">X</button>
+    <button href="javascript:void(0)" class="closebtn" onclick="closenav()"><img class="logo" src="se.png" alt="SpeedyEats"></button>
     <a href="">Name</a>
     <a href="">PhoneNumber</a>
     <a onclick="opensignup(),closenav()" class="navbutton">SignUp</a>
@@ -41,8 +41,8 @@
     }
     </script>
     <form>
-        <h1>Signup</h1>
         <button href="javascript:void(0)" class="closebtn" onclick="closesignup()">X</button>
+        <h1>Signup</h1>
         <img class="logo" src="se.png" alt="SpeedyEats"><br>
         <h3>Welcome to SpeedyEats</h3>
         <input class="form" name="name" id="name" type="text" placeholder="Enter Name" required>
@@ -50,7 +50,7 @@
         <input class="form" name="otp" id="otp" type="numb"placeholder=" Enter OTP XXXX">
         <button class="form" name="submitbutton" id="submitbutton">Submit</button>
         <button class="form" name="Resendbutton" id="resendbutton">Resend</button><br><br>
-        <a onclick="openlogin() , closesignup()"><p>Login Speedy</p></a>
+        <a onclick="openlogin(),closesignup()"><p>Login Speedy</p></a>
     </form>
 </div>
 <div class="loginform" id="loginform">
@@ -63,8 +63,8 @@
     }
     </script>
     <form>
-        <h1>Login to</h1>
         <button href="javascript:void(0)" class="closebtn" onclick="closelogin()">X</button>
+        <h1>Login to</h1>
         <img class="logo" src="se.png" alt="SpeedyEats"><br>
         <h3>Welcome back Speedy,</h3>
         <input class="form" name="email" id="email" type="email" placeholder="Enter E-mail Id or Phone Number" required>
@@ -85,8 +85,8 @@
     }
     </script>
     <form>
-        <h1>Wallet</h1>
         <button href="javascript:void(0)" class="closebtn" onclick="closewallet()">X</button>
+        <h1>Wallet</h1>
         <h3>Amount in your wallet<h1>200</h1></h3>
         <button class="funds" id="funds" onclick="closewallet(),openfunds()">Add funds</button>
     </form>
@@ -101,8 +101,8 @@
     }
     </script>
     <form>
-        <h1>Add Funds</h1>
         <button href="javascript:void(0)" class="closebtn" onclick="closefunds()">X</button>
+        <h1>Add Funds</h1>
         <h3>Add in your wallet<h1>200</h1></h3>
     </form>
 </div>
@@ -117,7 +117,7 @@
     </script>
     <div class="billbox">
         <button href="javascript:void(0)" class="closebtn" onclick="closebowl()">X</button>
-            <img src="hotel.png" alt="">
+        <img src="hotel.png" alt="">
             <p class="hotelinfo">Address</p>
             <table class="billbox">
                 <tr>

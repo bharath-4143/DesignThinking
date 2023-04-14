@@ -26,7 +26,10 @@ font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, O
   visibility: hidden;
   position: fixed;
   z-index: 1;
-  height: max-content;
+  height: min-content;
+  margin: 10%;
+  margin-top: 5vh;
+  width: 80%;
 }
 form{ 
   margin: auto;
@@ -74,14 +77,12 @@ a{
   background: rgb(109, 255, 80);
 }
 .bowl{
-display: flex;
-overflow: auto;
-flex-direction: column;
-white-space: nowrap;
-background: #f3f3f3;
-margin: 15px;
+margin: 10%;
+width: 80%;
 padding: 10px;
 border-radius: 20px;
+background-image: radial-gradient(white,rgb(255, 213, 135));
+border: 5px solid orange;
 }
 .bill{
 float: left;
@@ -97,18 +98,17 @@ margin-bottom: 15px;
 border-radius: 15px;
 padding: 15px;
 max-width: 340px;
-background-image:radial-gradient(rgb(253, 209, 128),orange);
+background-image: radial-gradient(white,rgb(255, 213, 135));
 }
 .billtable{
 margin-top: 5px;
 }
 .closebtn{
+  width: fit-content;
   font-size: 18px;
   background: transparent;
   border: none;
-  position: absolute;
-  top: 30px;
-  right: 30px;
+  float: inline-end;
 }
 .navbutton{
   font-size: 12px;
