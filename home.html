@@ -18,18 +18,17 @@
     }
     </script>
 <div id="nav" class="nav">
-    <button href="javascript:void(0)" class="closebtn" onclick="closenav()"><img class="logo" src="se.png" alt="SpeedyEats"></button>
-    <a href="">Name</a>
-    <a href="">PhoneNumber</a>
-    <a onclick="opensignup(),closenav()" class="navbutton">SignUp</a>
-    <a onclick="openlogin(),closenav()" class="navbutton">Login</a>
-    <a onclick="closenav()">Home</a>
-    <a onclick="openbowl(),closenav()">Bowl</a>
-    <a onclick="openwallet(),closenav()">Wallet</a>
-    <a onclick="openfunds(),closenav()">Add Funds</a>
-    <a onclick="openhistory(),closenav()">History</a>
-    <a onclick="closenav()" href="#contact">Support</a>
-    <a>About ツ</a>
+    <a href="javascript:void(0)" onclick="closenav()">X</a>
+    <img src="avatar.png" alt="avatar" class="avatar">
+    <a onclick="opensignup(),closenav()" class="navbutton">SignUp/Login</a><hr width="220px" color="black">
+    <a onclick="closenav()">Home</a><hr width="220px" color="black">
+    <a onclick="openbowl(),closenav()">Bowl</a><hr width="220px" color="black">
+    <a onclick="openwallet(),closenav()">Wallet</a><hr width="220px" color="black">
+    <a onclick="openfunds(),closenav()">Add Funds</a><hr width="220px" color="black">
+    <a onclick="openhistory(),closenav()">History</a><hr width="220px" color="black">
+    <a onclick="closenav()" href="#contact">Support</a><hr width="220px" color="black">
+    <a>About ツ</a><hr width="220px" color="black">
+    <a onclick="closenav()" class="navbutton">LogOut</a>
 </div>
 <div class="signupform" id="signupform">
     <script>
@@ -41,7 +40,7 @@
     }
     </script>
     <form>
-        <button href="javascript:void(0)" class="closebtn" onclick="closesignup()">X</button>
+        <a href="javascript:void(0)" class="closebtn" onclick="closesignup()">X</a>
         <h1>Signup</h1>
         <img class="logo" src="se.png" alt="SpeedyEats"><br>
         <h3>Welcome to SpeedyEats</h3>
@@ -63,7 +62,7 @@
     }
     </script>
     <form>
-        <button href="javascript:void(0)" class="closebtn" onclick="closelogin()">X</button>
+        <a href="javascript:void(0)" class="closebtn" onclick="closelogin()">X</a>
         <h1>Login to</h1>
         <img class="logo" src="se.png" alt="SpeedyEats"><br>
         <h3>Welcome back Speedy,</h3>
@@ -85,7 +84,7 @@
     }
     </script>
     <form>
-        <button href="javascript:void(0)" class="closebtn" onclick="closewallet()">X</button>
+        <a href="javascript:void(0)" class="closebtn" onclick="closewallet()">X</a>
         <h1>Wallet</h1>
         <h3>Amount in your wallet<h1>200</h1></h3>
         <button class="funds" id="funds" onclick="closewallet(),openfunds()">Add funds</button>
@@ -101,7 +100,7 @@
     }
     </script>
     <form>
-        <button href="javascript:void(0)" class="closebtn" onclick="closefunds()">X</button>
+        <a href="javascript:void(0)" class="closebtn" onclick="closefunds()">X</a>
         <h1>Add Funds</h1>
         <h3>Add in your wallet<h1>200</h1></h3>
     </form>
@@ -116,9 +115,7 @@
     }
     </script>
     <div class="billbox">
-        <button href="javascript:void(0)" class="closebtn" onclick="closebowl()">X</button>
-        <img src="hotel.png" alt="">
-            <p class="hotelinfo">Address</p>
+        <a href="javascript:void(0)" class="closebtn" onclick="closebowl()">X</a>
             <table class="billbox">
                 <tr>
                     <th>Items</th>
@@ -145,9 +142,8 @@
                     <td>440/-</td>
                 </tr>
             </table>
-            <p>🙏<br>Thankyou Visit Again</p>
-        </div>
-        <button class="paybutton">Pay</button>    
+            <p>🙏<br>Thankyou Visit Again <br><br><button class="paybutton">Pay</button></p>
+        </div>    
 </div>
     <div class="brand">
         <img class="logo" src="se.png" alt="SpeedyEats">
@@ -159,7 +155,7 @@
 <div>
     <h2 class="head">Today's Special</h2>
     <div class="box">
-            <div class="inbox"><img class="item" src="cb.png" alt="#">
+            <div class="inbox"><img class="item" src="cb.png" alt="#"><img class="vnv" src="nvg.png" alt="#">
             <h3 class="iname">Chiken Briyani</h3>
             <p class="iprice">₹ 120/-</p>
             <button class="button" id="count--">-</button>
