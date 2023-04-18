@@ -24,7 +24,7 @@ html{
 }
 .vnv{
   width: 20px;
-  float: inline-end;
+  float: right;
 }
 h1,h3{
 font-weight: normal;
