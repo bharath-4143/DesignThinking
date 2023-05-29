@@ -7,6 +7,9 @@ body{
     min-height: 100vh;
     margin: 0px;
 }
+h1,h2,h3,h4,p{
+    margin: 10px;
+}
 img{
     display: flex;
     margin: auto;
@@ -99,12 +102,16 @@ a{
     top: 0px;
     bottom: auto;
 }
+.hmenu{
+    padding: 0px 0px 0px 10px ;
+}
 .ibox{
     display: flex;
     overflow: auto;
 }
 .icard{
     min-width: 150px;
+    border: 1px solid white;
     background-image: linear-gradient(rgb(255, 220, 155),orange);
     box-shadow: inset 0px 0px 5px 2px whitesmoke;
     padding: 15px;
