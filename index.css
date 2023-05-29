@@ -8,6 +8,7 @@ body{
     margin: 0px;
 }
 h1,h2,h3,h4,p{
+    padding: 0px 0px 0px 10px ;
     margin: 10px;
 }
 img{
@@ -54,6 +55,7 @@ img{
     height: 100vh;
     padding: 10px;
     top: 0px;
+    bottom: auto;
     position: fixed;
     visibility: hidden;
 }
@@ -102,24 +104,39 @@ a{
     top: 0px;
     bottom: auto;
 }
-.hmenu{
-    padding: 0px 0px 0px 10px ;
+.hcard{  
+    visibility: hidden;
+    width: 80%;
+    height: 50vh;
+    border: 1px solid white;
+    background-image: linear-gradient(rgb(255, 220, 155),orange);
+    box-shadow: inset 0px 0px 3px 2px gray;
+    padding: 5%;
+    margin: 5%;
+    margin-top: 20vh;
+    margin-bottom: 20vh;
+    position: fixed;
+}
+.hpic{
+    width: 120px;
+    height: 120px;
 }
 .ibox{
     display: flex;
     overflow: auto;
 }
 .icard{
-    min-width: 150px;
+    width: 150px;
+    height: 240px;
     border: 1px solid white;
     background-image: linear-gradient(rgb(255, 220, 155),orange);
-    box-shadow: inset 0px 0px 5px 2px whitesmoke;
+    box-shadow: inset 0px 0px 3px 2px gray;
     padding: 15px;
     margin: 15px;
 }
 .ipic{
-    max-width: 100px;
-    max-height: 100px;
+    width: 100px;
+    height: 100px;
 }
 .ivnv{
     max-width: 15px;
