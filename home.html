@@ -6,174 +6,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SpeedyEats</title>
     <link rel="stylesheet" href="home.css">
-    <link rel="stylesheet" href="home.js">
+    <link rel="stylesheet" href="index.css">
 </head>
-<script>
-    function opennav() {
-      document.getElementById("nav").style.visibility = "visible";
-    }
-    
-    function closenav() {
-      document.getElementById("nav").style.visibility="hidden";
-    }
-    </script>
-<div id="nav" class="nav">
-    <a href="javascript:void(0)" onclick="closenav()">X</a>
-    <img src="avatar.png" alt="avatar" class="avatar">
-    <a onclick="openlogin(),closenav()" class="navbutton">SignUp/Login</a><hr width="318px" color="black">
-    <a onclick="closenav()">Home</a><hr width="318px" color="black">
-    <a onclick="openbowl(),closenav()">Bowl</a><hr width="318px" color="black">
-    <a onclick="openwallet(),closenav()">Wallet</a><hr width="318px" color="black">
-    <a onclick="openfunds(),closenav()">Add Funds</a><hr width="318px" color="black">
-    <a onclick="openhistory(),closenav()">History</a><hr width="318px" color="black">
-    <a onclick="closenav()" href="#contact">Support</a><hr width="318px" color="black">
-    <a>About ツ</a><hr width="318px" color="black">
-    <a onclick="closenav()" class="navbutton">LogOut</a>
-</div>
-<div class="pop" id="signupform">
-    <script>
-    function opensignup() {
-      document.getElementById("signupform").style.visibility = "visible";
-    }
-    function closesignup() {
-      document.getElementById("signupform").style.visibility="hidden";
-    }
-    </script>
-    <form>
-        <a href="javascript:void(0)" class="closebtn" onclick="closesignup()">X</a>
-        <h1>Signup</h1>
-        <img class="logo" src="se.png" alt="SpeedyEats"><br>
-        <h3>Welcome to SpeedyEats</h3>
-        <input class="form" name="name" id="name" type="text" placeholder="Enter Name" required>
-        <input class="form" name="email" id="email" type="email" placeholder="Enter E-mail Id or Phone Number" required>
-        <input class="form" name="otp" id="otp" type="numb"placeholder=" Enter OTP XXXX">
-        <button class="form" name="submitbutton" id="submitbutton">Submit</button>
-        <button class="form" name="Resendbutton" id="resendbutton">Resend</button><br><br>
-        <a onclick="openlogin(),closesignup()"><p>Login Speedy</p></a>
-    </form>
-</div>
-<div class="pop" id="loginform">
-    <script>
-    function openlogin() {
-      document.getElementById("loginform").style.visibility = "visible";
-    }
-    function closelogin() {
-      document.getElementById("loginform").style.visibility="hidden";
-    }
-    </script>
-    <form>
-        <a href="javascript:void(0)" class="closebtn" onclick="closelogin()">X</a>
-        <h1>Login to</h1>
-        <img class="logo" src="se.png" alt="SpeedyEats"><br>
-        <h3>Welcome back Speedy,</h3>
-        <input class="form" name="email" id="email" type="email" placeholder="Enter E-mail Id or Phone Number" required>
-        <button class="form" name="Resendbutton" id="resendbutton">Send OTP</button>
-        <input class="form" name="otp" id="otp" type="numb"placeholder=" Enter OTP XXXX">
-        <button class="form" name="submitbutton" id="submitbutton">Submit</button>
-        <button class="form" name="Resendbutton" id="resendbutton">Resend</button><br><br>
-        <a onclick="opensignup(),closelogin()"><p>Signup & Be Speedy</p></a>
-    </form>
-</div>
-<div class="pop" id="wallet">
-    <script>
-    function openwallet() {
-      document.getElementById("wallet").style.visibility = "visible";
-    }
-    function closewallet() {
-      document.getElementById("wallet").style.visibility="hidden";
-    }
-    </script>
-    <form>
-        <a href="javascript:void(0)" class="closebtn" onclick="closewallet()">X</a>
-        <h1>Wallet</h1>
-        <h3>Amount in your wallet<h1>200</h1></h3>
-        <button class="funds" id="funds" onclick="closewallet(),openfunds()">Add funds</button>
-    </form>
-</div>
-<div class="pop" id="Funds">
-    <script>
-    function openfunds() {
-      document.getElementById("Funds").style.visibility = "visible";
-    }
-    function closefunds() {
-      document.getElementById("Funds").style.visibility="hidden";
-    }
-    </script>
-    <form>
-        <a href="javascript:void(0)" class="closebtn" onclick="closefunds()">X</a>
-        <h1>Add Funds</h1>
-        <h3>Add in your wallet<h1>200</h1></h3>
-    </form>
-</div>
-<div class="pop" id="bowl">
-    <script>
-    function openbowl() {
-      document.getElementById("bowl").style.visibility = "visible";
-    }
-    function closebowl() {
-      document.getElementById("bowl").style.visibility="hidden";
-    }
-    </script>
-    <div class="billbox">
-        <a href="javascript:void(0)" class="closebtn" onclick="closebowl()">X</a><br>
-            <table class="bill">
-                <tr>
-                    <th>Items</th>
-                    <th>Price</th>
-                    <th>Count</th>
-                    <th>Total</th>
-                </tr>
-                <tr>
-                    <td>Mutton Briyani</td>
-                    <td>120/-</td>
-                    <td>2</td>
-                    <td>240/-</td>
-                </tr>                    
-                <tr>
-                    <td>Chiken Briyani</td>
-                    <td>100/-</td>
-                    <td>2</td>
-                    <td>200/-</td>
-                </tr><br>
-                <tr>
-                    <td>Total Amount</td>
-                    <td></td>
-                    <td>4</td>
-                    <td>440/-</td>
-                </tr>
-            </table>
-            <p>🙏<br>Thankyou Visit Again <br><br><button class="paybutton">Pay</button></p>
-        </div>    
-</div>
-    <div class="brand">
-        <img class="logo" src="se.png" alt="SpeedyEats">
-        <button class="homeicon"><img class="buttonimg" src="≡.png" alt="#"onclick="opennav()"></button>
-        <button class="bowlicon"><img class="buttonimg" src="bowl.png" alt="#"onclick="openbowl()"></button>
-        <button class="walleticon"><img class="buttonimg" src="wallet.png" alt="#"onclick="openwallet()"></button>
-    </div>
-    <hr color="black" size="0.1px">
-<div>
-    <h2 class="head">Today's Special</h2>
-    <div class="box">
-            <div class="inbox"><img class="vnv" src="nvg.png" alt="#"><br><img class="item" src="cb.png" alt="#">
+<h2 class="head">Today's Special</h2>
+    <div class="menu">
+            <div class="itembox"><img class="item" src="cb.png" alt="#">
             <h3 class="iname">Chiken Briyani</h3>
             <p class="iprice">₹ 120/-</p>
             <button class="button" id="count--">-</button>
             <button class="button" id="count">ADD</button>
             <button class="button" id="count++">+</div>
-            <div class="inbox"><img class="vnv" src="nvg.png" alt="#"><br><img class="item" src="mb.png" alt="#">
+            <div class="itembox"><img class="item" src="mb.png" alt="#">
             <h3 class="iname">Mutton Briyani</h3>
             <p class="iprice">₹ 150/-</p>
             <button class="button" id="count--">-</button>
             <button class="button" id="count">ADD</button>
             <button class="button" id="count++">+</div>
-            <div class="inbox"><img class="vnv" src="vg.png" alt="#"><br><img class="item" src="vb.png" alt="#">
+            <div class="itembox"><img class="item" src="vb.png" alt="#">
             <h3 class="iname">Veg Briyani</h3>
             <p class="iprice">₹ 100/-</p>
             <button class="button" id="count--">-</button>
             <button class="button" id="count">ADD</button>
             <button class="button" id="count++">+</div>
-            <div class="inbox"><img class="vnv" src="nvg.png" alt="#"><br><img class="item" src="bb.png" alt="#">
+            <div class="itembox"><img class="item" src="bb.png" alt="#">
             <h3 class="iname">Briyani Combo</h3>
             <p class="iprice">₹ 200/-</p>
             <button class="button" id="count--">-</button>
@@ -181,26 +36,26 @@
             <button class="button" id="count++">+</div>    
     </div>
         <h2 class="head">Menu</h2>
-    <div class="box">
-        <div class="inbox"><img class="vnv" src="vg.png" alt="#"><br><img class="item" src="rd.png" alt="#">
+    <div class="menu">
+        <div class="itembox"><img class="item" src="rd.png" alt="#">
         <h3 class="iname">Veg Meal</h3>
         <p class="iprice">₹ 50/-</p>
             <button class="button" id="count--">-</button>
             <button class="button" id="count">ADD</button>
             <button class="button" id="count++">+</div>
-        <div class="inbox"><img class="vnv" src="nvg.png" alt="#"><br><img class="item" src="rc.png" alt="#">
+        <div class="itembox"><img class="item" src="rc.png" alt="#">
         <h3 class="iname">Roti & Chiken</h3>
         <p class="iprice">₹ 80/-</p>
             <button class="button" id="count--">-</button>
             <button class="button" id="count">ADD</button>
             <button class="button" id="count++">+</div>
-        <div class="inbox"><img class="vnv" src="nvg.png" alt="#"><br><img class="item" src="cf.png" alt="#">
+        <div class="itembox"><img class="item" src="cf.png" alt="#">
         <h3 class="iname">Chiken Fry</h3>
         <p class="iprice">₹ 60/-</p>
             <button class="button" id="count--">-</button>
             <button class="button" id="count">ADD</button>
             <button class="button" id="count++">+</div>
-        <div class="inbox"><img class="vnv" src="nvg.png" alt="#"><br><img class="item" src="ck.png" alt="#">
+        <div class="itembox"><img class="item" src="ck.png" alt="#">
         <h3 class="iname">Chiken Kebab</h3>
         <p class="iprice">₹ 60/-</p>
             <button class="button" id="count--">-</button>
@@ -208,26 +63,26 @@
             <button class="button" id="count++">+</div> 
     </div>
         <h2 class="head">Drinks</h2>
-    <div class="box">
-        <div class="inbox"><img class="vnv" src="vg.png" alt="#"><br><img class="item" src="mk.png" alt="#">
+    <div class="menu">
+        <div class="itembox"><img class="item" src="mk.png" alt="#">
         <h3 class="iname">Milk</h3>
         <p class="iprice">₹ 20/-</p>
             <button class="button" id="count--">-</button>
             <button class="button" id="count">ADD</button>
             <button class="button" id="count++">+</div>
-        <div class="inbox"><img class="vnv" src="vg.png" alt="#"><br><img class="item" src="bt.png" alt="#">
+        <div class="itembox"><img class="item" src="bt.png" alt="#">
         <h3 class="iname">Boost</h3>
         <p class="iprice">₹ 25/-</p>
             <button class="button" id="count--">-</button>
             <button class="button" id="count">ADD</button>
             <button class="button" id="count++">+</div>
-        <div class="inbox"><img class="vnv" src="vg.png" alt="#"><br><img class="item" src="ls.png" alt="#">
+        <div class="itembox"><img class="item" src="ls.png" alt="#">
         <h3 class="iname">Lime Soda</h3>
         <p class="iprice">₹ 20/-</p>
             <button class="button" id="count--">-</button>
             <button class="button" id="count">ADD</button>
             <button class="button" id="count++">+</div>
-        <div class="inbox"><img class="vnv" src="vg.png" alt="#"><br><img class="item" src="ffs.png" alt="#">
+        <div class="itembox"><img class="item" src="ffs.png" alt="#">
         <h3 class="iname">Fresh Fruit Juice</h3>
         <p class="iprice">₹ 40/-</p>
             <button class="button" id="count--">-</button>
@@ -235,72 +90,30 @@
             <button class="button" id="count++">+</div> 
     </div>
         <h2 class="head">Ice Creams</h2>
-    <div class="box">
-        <div class="inbox"><img class="vnv" src="vg.png" alt="#"><br><img class="item" src="bc.png" alt="#">
+    <div class="menu">
+        <div class="itembox"><img class="item" src="bc.png" alt="#">
             <h3 class="iname">Black Current</h3>
             <p class="iprice">₹ 30/-</p>
             <button class="button" id="count--">-</button>
             <button class="button" id="count">ADD</button>
             <button class="button" id="count++">+</div>
-            <div class="inbox"><img class="vnv" src="vg.png" alt="#"><br><img class="item" src="cc.png" alt="#">
+            <div class="itembox"><img class="item" src="cc.png" alt="#">
             <h3 class="iname">Chocolate</h3>
             <p class="iprice">₹ 30/-</p>
             <button class="button" id="count--">-</button>
             <button class="button" id="count">ADD</button>
             <button class="button" id="count++">+</div>
-            <div class="inbox"><img class="vnv" src="vg.png" alt="#"><br><img class="item" src="oi.png" alt="#">
+            <div class="itembox"><img class="item" src="oi.png" alt="#">
             <h3 class="iname">Oreo</h3>
             <p class="iprice">₹ 40/-</p>
             <button class="button" id="count--">-</button>
             <button class="button" id="count">ADD</button>
             <button class="button" id="count++">+</div>
-            <div class="inbox"><img class="vnv" src="vg.png" alt="#"><br><img class="item" src="ic.png" alt="#">
+            <div class="itembox"><img class="item" src="ic.png" alt="#">
             <h3 class="iname">Combo Basket</h3>
             <p class="iprice">₹ 100/-</p>
             <button class="button" id="count--">-</button>
             <button class="button" id="count">ADD</button>
             <button class="button" id="count++">+</div> 
     </div>
-    <footer>
-        <div class="js">
-            <hr class="redline" size="2px" color="red"> 
-            <hr class="redline" size="10px" color="red">
-            <hr  class="redline" size="2px" color="red">
-            <hr class="blackline" size="2px" color="Black"> 
-        </div>
-<div class="connect">
-    <table>
-        <th>About</th>
-    </table>
-    <table id="contact">
-        <th>Contacts</th>
-        <tr>
-            <td><a href="mailto:"><img class="c" src="ml.png" alt="">E-Mail</a></td>
-        </tr>
-        <tr>
-            <td><a href="https://wa.me/939XXXX939" ><img class="c" src="wa.png" alt="Whatsapp">Whatsapp</a></td>
-        </tr>
-        <tr>
-            <td><a href="https://in.linkedin.com/in/" ><img class="c" src="li.png" alt="LinkedIn">LinkedIn</a></td>
-        </tr>
-        <tr>
-            <td><a href="https://twitter.com/" ><img class="c" src="tw.png" alt="Twitter">Twitter</a></td>
-        </tr>
-        <tr>
-            <td><a href="https://www.instagram.com/" ><img class="c" src="in.png" alt="Instagram">Instagram</a></td>
-        </tr>
-    </table>
-    <table>
-        <th>Newsletter</th>
-    </table>
-    <table>
-        <th>Career</th>
-    </table>
-    <table>
-        <th>Report</th>
-    </table>
-</div>
-<h6><h class="c" id="contact">Special thanks to<br><br><img class="ppp" src="ppp.png"><a href="https://in.linkedin.com/in/drppalpandian"><h3>Prof Dr P Pal Pandian</h3></a></h></h6><br><br>
-</footer>
-</div>
 </html>
