@@ -61,7 +61,7 @@ form{
     background: white;
     display: flex;
     flex-direction: column;
-    box-shadow: inset 0px 0px 5px 2px gray;
+    box-shadow: inset 0px 0px 5px 2px lightgray;
     padding: 10px;
     margin: auto;
     width: 80%;
@@ -106,7 +106,7 @@ a{
 .icard{
     min-width: 150px;
     background-image: linear-gradient(rgb(255, 220, 155),orange);
-    box-shadow: inset 0px 0px 5px 2px gray;
+    box-shadow: inset 0px 0px 5px 2px whitesmoke;
     padding: 15px;
     margin: 15px;
 }
