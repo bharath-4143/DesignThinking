@@ -9,9 +9,18 @@ body{
 }
 h1,h2,h3,h4,p{
     padding: 0px 0px 0px 10px ;
-    margin: 10px;
+    margin: 5px;
 }
-img{
+h2{
+    font-size: 20px;
+}
+h3{
+    font-size: 18px;
+}
+h4{
+    font-size: 16px;
+}
+img,p{
     display: flex;
     margin: auto;
 }
@@ -73,10 +82,15 @@ form{
     max-width: 360px;
 }
 .form{
+    height: 20px;
     border-radius: 5px;
     border: 1px solid gray;
     outline: none;
     margin: 5px;
+}
+.decision{
+    padding: 10px;
+    margin: auto;
 }
 a{
     display: flex;
@@ -126,11 +140,12 @@ a{
     overflow: auto;
 }
 .icard{
-    width: 150px;
-    height: 240px;
+    min-width: 120px;
+    max-width: 120px;
+    max-height: 240px;
     border: 1px solid white;
     background-image: linear-gradient(rgb(255, 220, 155),orange);
-    box-shadow: inset 0px 0px 3px 2px gray;
+    box-shadow: inset 0px 0px 3px 1px black;
     padding: 15px;
     margin: 15px;
 }
@@ -142,4 +157,25 @@ a{
     max-width: 15px;
     float: right;
     margin: 0px;
+}
+.iname{
+    height: 42px;
+}
+.iname,.iprice,.icount{
+    display: flex;
+    padding: 5px; 
+    margin: auto;
+}
+.bowl{
+    background: white;
+    display: flex;
+    flex-direction: column;
+    box-shadow: inset 0px 0px 5px 2px lightgray;
+    padding: 10px;
+    margin: auto;
+    width: 80%;
+    max-width: 360px;
+}
+table{
+    width: 100%;
 }

@@ -4,28 +4,47 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
     <title>SpeedyEats</title>
 </head>
-<body>
-    <div class="box">
-        <h2>Add Item</h2>
-        <select class="itype">
-            <option value="" disabled selected>Select Category</option>
-            <option value="todaysmenu">Today Special</option>
-            <option value="menu">Menu</option>
-            <option value="drinks">Drinks</option>
-            <option value="icecream">Icecream</option>
-            <option value="snacks">Snacks</option>
-        </select>
-        <input class="item" type="file">
-        <input class="iname" type="text" placeholder="Item Name">
-        <select class="vn">
-            <option value="vg">Veg</option>
-            <option value="nvg">Non-Veg</option>
-        </select>
-        <input class="icount" type="text" placeholder="Count">
-        <input class="iprice" type="text" placeholder="Price">
-        <button class="button">ADD</button>
-    </div>    
+<style>
+    body{
+        background: orange;
+    }
+</style>
+<body>  
+<div class="center">
+        <form id="additem">
+            <img src="se.png" alt="SpeedyEats" class="logo"><br>
+            <h2>Add or Edit Item</h2>
+            <select class="form itype">
+                <option value="" disabled selected>Select Category</option>
+                <option value="todaysmenu">Today Special</option>
+                <option value="menu">Menu</option>
+                <option value="drinks">Drinks</option>
+                <option value="icecream">Icecream</option>
+                <option value="snacks">Snacks</option>
+            </select>
+            <select class="form item">
+                <option value="" disabled selected>Select Item</option>
+                <option value="todaysmenu">New Item</option>
+                <option value="menu">Menu</option>
+                <option value="drinks">Drinks</option>
+                <option value="icecream">Icecream</option>
+                <option value="snacks">Snacks</option>
+            </select>
+            <input class="form item" type="file">
+            <input class="form iname" type="text" placeholder="Item Name">
+            <select class="form vn">
+                <option value="vg">Veg</option>
+                <option value="nvg">Non-Veg</option>
+            </select>
+            <input class="form iprice" type="text" placeholder="Price">
+            <div class="decision">
+                <button class="form button">Add</button> 
+                <button class="form button">Discard</button> 
+            </div>
+        </form>
+</div>    
 </body>
 </html>
