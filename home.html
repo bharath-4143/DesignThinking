@@ -6,10 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SpeedyEats</title>
     <link rel="stylesheet" href="index.css">
+    <script src="index.js"></script>
 </head>
 <div id="nav" class="nav">
-    <div class="close">X</div>
-    <img src="avatar.png" alt="avatar" class="avatar icon">
+    <div class="close" onclick="closenav()">X</div>
+    <img id="" src="avatar.png" alt="avatar" class="avatar icon">
     <a class="navlink" >SignUp/Login</a>
     <a class="navlink" >LogOut</a>
     <a class="navlink" >Home</a>
@@ -26,8 +27,8 @@
     <hr class="blackline" size="2px" color="Black"> 
 </div>
 <div class="navbar">
-    <img class="buttonimg icon left" src="≡.png" alt="#">
-    <img class="logo left" src="se.png" alt="SpeedyEats">
+    <img class="buttonimg icon left" src="≡.png" onclick="opennav()" alt="#">
+    <img class="logo left" src="se.png" onclick="document.location='index.html'" alt="SpeedyEats">
     <img class="buttonimg icon right" src="bowl.png" alt="#">
     <img class="buttonimg icon right" src="wallet.png" alt="#">
 </div>
