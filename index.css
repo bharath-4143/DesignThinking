@@ -8,7 +8,7 @@ body{
     margin: 0px;
 }
 .js{
-    padding: 10px 0px 0px 0px;
+    padding: 10px 0px 10px 0px;
 }
 .redline{
     border-radius: 0px;
@@ -27,7 +27,7 @@ h3{
 h4{
     font-size: 16px;
 }
-img,p{
+img{
     display: flex;
     margin: auto;
 }
@@ -130,7 +130,7 @@ a{
     width: 80%;
     height: 50vh;
     border: 1px solid white;
-    background-image: linear-gradient(rgb(255, 220, 155),orange);
+    background-image: linear-gradient(rgb(255, 220, 155),#ff9100);
     box-shadow: inset 0px 0px 3px 2px gray;
     padding: 5%;
     margin: 5%;
@@ -147,13 +147,13 @@ a{
     overflow: auto;
 }
 .icard{
-    min-width: 120px;
-    max-width: 120px;
+    min-width: 130px;
+    max-width: 130px;
     max-height: 240px;
     border: 1px solid white;
-    background-image: linear-gradient(rgb(255, 220, 155),orange);
-    box-shadow: inset 0px 0px 3px 1px black;
-    padding: 15px;
+    background-image: linear-gradient(rgb(255, 229, 180),#ff9100);
+    box-shadow: inset 0px 0px 4px 1px black;
+    padding: 10px;
     margin: 15px;
 }
 .ipic{
@@ -172,6 +172,11 @@ a{
     display: flex;
     padding: 5px; 
     margin: auto;
+    text-align: center;
+    width: fit-content;
+}
+.icount{
+    width: auto;
 }
 .bowl{
     background: white;

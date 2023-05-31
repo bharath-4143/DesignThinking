@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
     <title>SpeedyEats</title>
     <link rel="stylesheet" href="index.css">
     <script src="index.js"></script>
@@ -27,10 +27,10 @@
     <hr class="blackline" size="2px" color="Black"> 
 </div>
 <div class="navbar">
-    <img class="buttonimg icon left" src="≡.png" onclick="opennav()" alt="#">
+    <svg width="40px" height="40px" class="buttonimg icon left" onclick="opennav()" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="#000000"><polygon fill="#ffffff" points="20 14 4 14 4 14 20 14 20 14" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/><polygon fill="#ffffff" points="20 10 4 10 4 10 20 10 20 10" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/><polygon fill="#ffffff" points="20 6 4 6 4 6 20 6 20 6" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/></svg>
     <img class="logo left" src="se.png" onclick="document.location='index.html'" alt="SpeedyEats">
-    <img class="buttonimg icon right" src="bowl.png" alt="#">
-    <img class="buttonimg icon right" src="wallet.png" alt="#">
+    <svg width="40px" height="40px" class="buttonimg icon right" viewBox="0 0 1024.00 1024.00" xmlns="http://www.w3.org/2000/svg" fill="#000000" stroke="#000000" stroke-width="0.02"><path fill="#000000" d="M714.432 704a351.744 351.744 0 0 0 148.16-256H161.408a351.744 351.744 0 0 0 148.16 256h404.864zM288 766.592A415.68 415.68 0 0 1 96 416a32 32 0 0 1 32-32h768a32 32 0 0 1 32 32 415.68 415.68 0 0 1-192 350.592V832a64 64 0 0 1-64 64H352a64 64 0 0 1-64-64v-65.408zM493.248 320h-90.496l254.4-254.4a32 32 0 1 1 45.248 45.248L493.248 320zm187.328 0h-128l269.696-155.712a32 32 0 0 1 32 55.424L680.576"/></svg>
+    <svg version="1.1" width="40px" height="40px" class="buttonimg icon right" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"  viewBox="-5.12 -5.12 42.24 42.24" enable-background="new 0 0 32 32" xml:space="preserve" fill="#000000" stroke="#000000" stroke-width="0.8640000000000001"><path fill="#000000" d="M32,8.5C32,7.673,31.327,7,30.5,7H26V1.908c0-0.743-0.222-1.282-0.658-1.603 c-0.486-0.355-1.176-0.396-2.041-0.123L0.359,6.883c-0.24,0.07-0.378,0.306-0.345,0.547C0.011,7.454,0,7.475,0,7.5v23 C0,31.327,0.673,32,1.5,32h29c0.827,0,1.5-0.673,1.5-1.5V8.5z M31,24h-9.5c-0.275,0-0.5-0.224-0.5-0.5v-8 c0-0.276,0.225-0.5,0.5-0.5H31V24z M23.592,1.139c0.538-0.169,0.951-0.181,1.158-0.028C24.957,1.263,25,1.628,25,1.908V7H3.526 L23.592,1.139z M30.5,31h-29C1.225,31,1,30.776,1,30.5V8h29.5C30.775,8,31,8.224,31,8.5V14h-9.5c-0.827,0-1.5,0.673-1.5,1.5v8 c0,0.827,0.673,1.5,1.5,1.5H31v5.5C31,30.776,30.775,31,30.5,31z"/></svg>
 </div>
 <div class="hcard"><img class="hpic" alt="#">
     <div class="habout">
@@ -44,31 +44,39 @@
     <h2 class="head">North Canteen</h2>
     <h3 class="head">Todays Special</h3>
     <div class="ibox">
-                <div class="icard"><img class="ivnv icon" src="nvg.png" alt="#"><br><img class="ipic" src="cb.png" alt="#">
-                <h3 class="iname">Chiken Briyani</h3>
-                <p class="iprice">₹ 120/-</p>
-                <button class="button" id="icount--">-</button>
-                <button class="button" id="icount">ADD</button>
-                <button class="button" id="icount++">+</div>
+        <div class="icard"><img class="ivnv icon" src="nvg.png" alt="#"><br><img class="ipic" src="cb.png" alt="#">
+            <h3 class="iname">Chiken Briyani</h3>
+            <p class="iprice">₹ 120/-</p>
+            <div class="icount">
+                <a id="icount--">-</a>
+                <a id="icount">ADD</a>
+                <a id="icount++">+</a></div> 
+            </div>
                 <div class="icard"><img class="ivnv icon" src="nvg.png" alt="#"><br><img class="ipic" src="mb.png" alt="#">
                 <h3 class="iname">Mutton Briyani</h3>
                 <p class="iprice">₹ 150/-</p>
-                <button class="button" id="icount--">-</button>
-                <button class="button" id="icount">ADD</button>
-                <button class="button" id="icount++">+</div>
-                <div class="icard"><img class="ivnv icon" src="vg.png" alt="#"><br><img class="ipic" src="vb.png" alt="#">
+                <div class="icount">
+                    <a id="icount--">-</a>
+                    <a id="icount">ADD</a>
+                    <a id="icount++">+</a></div> 
+                </div>
+                    <div class="icard"><img class="ivnv icon" src="vg.png" alt="#"><br><img class="ipic" src="vb.png" alt="#">
                 <h3 class="iname">Veg Briyani</h3>
                 <p class="iprice">₹ 100/-</p>
-                <button class="button" id="icount--">-</button>
-                <button class="button" id="icount">ADD</button>
-                <button class="button" id="icount++">+</div>
-                <div class="icard"><img class="ivnv icon" src="nvg.png" alt="#"><br><img class="ipic" src="bb.png" alt="#">
+                <div class="icount">
+                    <a id="icount--">-</a>
+                    <a id="icount">ADD</a>
+                    <a id="icount++">+</a></div> 
+                </div>
+                    <div class="icard"><img class="ivnv icon" src="nvg.png" alt="#"><br><img class="ipic" src="bb.png" alt="#">
                 <h3 class="iname">Briyani Combo</h3>
                 <p class="iprice">₹ 200/-</p>
-                <button class="button" id="icount--">-</button>
-                <button class="button" id="icount">ADD</button>
-                <button class="button" id="icount++">+</div>    
-        </div> 
+                <div class="icount">
+                    <a id="icount--">-</a>
+                    <a id="icount">ADD</a>
+                    <a id="icount++">+</a></div> 
+                </div>    
+                </div> 
     </div>
     </div>
 <div class="hotel">
@@ -104,31 +112,39 @@
     <h2 class="head">KNS Eats</h2>
     <h3 class="head">Todays Special</h3>
     <div class="ibox">
-                <div class="icard"><img class="ivnv icon" src="nvg.png" alt="#"><br><img class="ipic" src="cb.png" alt="#">
-                <h3 class="iname">Chiken Briyani</h3>
-                <p class="iprice">₹ 120/-</p>
-                <button class="button" id="icount--">-</button>
-                <button class="button" id="icount">ADD</button>
-                <button class="button" id="icount++">+</div>
+        <div class="icard"><img class="ivnv icon" src="nvg.png" alt="#"><br><img class="ipic" src="cb.png" alt="#">
+            <h3 class="iname">Chiken Briyani</h3>
+            <p class="iprice">₹ 120/-</p>
+            <div class="icount">
+                <a id="icount--">-</a>
+                <a id="icount">ADD</a>
+                <a id="icount++">+</a></div> 
+            </div>
                 <div class="icard"><img class="ivnv icon" src="nvg.png" alt="#"><br><img class="ipic" src="mb.png" alt="#">
                 <h3 class="iname">Mutton Briyani</h3>
                 <p class="iprice">₹ 150/-</p>
-                <button class="button" id="icount--">-</button>
-                <button class="button" id="icount">ADD</button>
-                <button class="button" id="icount++">+</div>
-                <div class="icard"><img class="ivnv icon" src="vg.png" alt="#"><br><img class="ipic" src="vb.png" alt="#">
+                <div class="icount">
+                    <a id="icount--">-</a>
+                    <a id="icount">ADD</a>
+                    <a id="icount++">+</a></div> 
+                </div>
+                    <div class="icard"><img class="ivnv icon" src="vg.png" alt="#"><br><img class="ipic" src="vb.png" alt="#">
                 <h3 class="iname">Veg Briyani</h3>
                 <p class="iprice">₹ 100/-</p>
-                <button class="button" id="icount--">-</button>
-                <button class="button" id="icount">ADD</button>
-                <button class="button" id="icount++">+</div>
-                <div class="icard"><img class="ivnv icon" src="nvg.png" alt="#"><br><img class="ipic" src="bb.png" alt="#">
+                <div class="icount">
+                    <a id="icount--">-</a>
+                    <a id="icount">ADD</a>
+                    <a id="icount++">+</a></div> 
+                </div>
+                    <div class="icard"><img class="ivnv icon" src="nvg.png" alt="#"><br><img class="ipic" src="bb.png" alt="#">
                 <h3 class="iname">Briyani Combo</h3>
                 <p class="iprice">₹ 200/-</p>
-                <button class="button" id="icount--">-</button>
-                <button class="button" id="icount">ADD</button>
-                <button class="button" id="icount++">+</div>    
-        </div>    
+                <div class="icount">
+                    <a id="icount--">-</a>
+                    <a id="icount">ADD</a>
+                    <a id="icount++">+</a></div> 
+                </div>    
+                </div>    
     </div>
     <h2 class="head">MBA Canteen</h2>
     <h3 class="head">Todays Special</h3>
