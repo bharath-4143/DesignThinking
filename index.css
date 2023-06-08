@@ -50,6 +50,7 @@ img{
     width: auto;
     padding: 10px 0px 10px 0px;
     margin: auto;
+    filter: drop-shadow(12px 12px 12px 12px rgba(0,0,0,0.7));
 }
 .column{
     width: fit-content;
